@@ -1,0 +1,67 @@
+body {
+    font-family: 'Inter', sans-serif;
+  }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+section{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+
+}
+
+p {
+  text-indent: 40px;
+  font-size: 1px;
+  text-align: justify;
+  color: var(--cinza-principal);
+}
+
+h1{
+  color: var(--cor-branca);
+  font-family: "Girassol", serif;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+
+h1 span {
+  color: var(--cor-um);
+}
+
+
+.btn{
+    margin-top: 20px;
+    width: fit-content;
+    background: var(--cor-um);
+    border: none;
+    padding: 5px 10px;
+    color: black;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* Classe que será adicionada via JavaScript quando o elemento estiver visível */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+

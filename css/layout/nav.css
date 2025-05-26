@@ -1,0 +1,182 @@
+header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center; 
+    transition: 0.3s ease-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    font-size: 15px;
+}
+
+nav {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home ul{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+
+ul li {
+    list-style: none;
+
+}
+
+a{
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+    color: aliceblue;
+
+}
+
+header a::after{
+    content: '';
+    position: absolute;
+    background: var(--cor-um);
+    height: 1.5px;
+    width: 0%;
+    bottom: -2px;
+    left: 0;
+    transition: 0.3s ease-in-out;
+    
+}
+
+header a:hover::after{
+    width: 50%;
+}
+
+header:hover {
+    background-color: rgba(128, 128, 128, 0.168);
+}
+
+
+
+
+
+.hamburger {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+}
+
+.close-nav{
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+}
+
+
+
+
+.home{
+    height: 100vh;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+
+}
+
+
+.home-content{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0px 5%;
+}
+
+
+
+
+.home-content h1 {
+    line-height: normal;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.home-content span{
+    color: var(--cor-um);
+}
+
+.btns-home{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 15px;
+}
+
+#explore-btn{
+    background: transparent;
+    border: 1px solid var(--cor-um);
+    color: var(--cor-um);
+}
+
+#explore-btn:hover{
+    background-color: var(--cor-um);
+    color: black;
+}
+
+#conhecamais-btn:hover{
+    background-color: var(--cor-dois);
+}
+
+#explore-btn:hover{
+    background-color: var(--cor-um);
+}
+
+@media (max-width: 880px){
+
+    .home ul{
+        display: none;
+    }
+    .hamburger{
+        display: inline;
+    }
+    .home-content{
+        width: fit-content;
+        align-items: center;  
+    }
+
+    .home-content h1{
+        font-size: 30px; 
+        text-align: center;      
+    }
+    .btns-home{
+        width: fit-content;
+        gap: 10px;
+        justify-content: center;
+    }
+    .home-content a{
+        font-size: 10px;
+    }
+
+}
+
+
+
+
+

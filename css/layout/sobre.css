@@ -1,0 +1,149 @@
+#sobre{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-preta);
+
+    
+}
+
+.sobre-container{
+    height: 100%;
+    width: 100%;
+    margin: 0px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+
+}
+
+.sobre-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 718px;
+    height: 500px;
+
+    border-radius: 5px;
+    
+
+}
+
+.sobre-content h1{
+    color: var(--cor-branca);
+    line-height: 40px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.sobre-content h1::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 20%;
+    background-color: var(--cor-um);
+    bottom: -10px;
+    left: 0px;
+
+}
+
+.sobre-content p{
+    color: var(--cinza-principal);
+    font-size: 17px;
+    margin-bottom: 15px;
+
+}
+
+.content-right{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.sobre-container img{
+    height: auto;
+    max-width: 100%;
+    border-radius: 5px; 
+    position: relative;
+    overflow: hidden;
+    z-index: 99;
+    transition: 0.3s;
+}
+.content-right::after{
+    content: '';
+    border: 1px solid var(--cor-um);
+    border-radius: 5px;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: -15px;
+    bottom: -15px;
+    z-index: 98;
+}
+
+.content-right::before{
+    content: '';
+    border: 1px solid var(--cor-um);
+    border-radius: 5px;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    z-index: 98;
+}
+
+
+.imagem-sobre{
+    overflow: hidden;
+    border-radius: 5px;
+}
+    
+
+.sobre-container img:hover{
+    transform: scale(1.05);
+}
+
+
+.info-left{
+    max-width: 718px;
+
+
+}
+
+
+@media (max-width:1250px){
+    #sobre{
+        height: fit-content;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 0px;
+    }
+
+    .sobre-container{
+        flex-direction: column;
+        margin: 0px 30px;
+        gap: 50px;
+    }
+    .sobre-content{
+        height: fit-content;
+        width: fit-content;
+    }
+
+    #sobre h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    #sobre h1::after{
+        bottom: -5px;
+    }
+    #sobre p{
+        font-size: 15px;
+    }
+
+}
+
+
