@@ -38,5 +38,9 @@
     .mobile-bg{
         display: block;
     }
+    .home-content{
+    display: none;
+    }
+
 }
 
