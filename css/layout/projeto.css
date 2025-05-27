@@ -1,7 +1,7 @@
 #projeto{
     background-color: var(--cor-preta);
-    height: fit-content;
-    padding-bottom: 100px ;
+    height: 100vh;
+    
 
 }
 #projeto p{
@@ -38,6 +38,7 @@
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .projeto-block{
@@ -49,7 +50,7 @@
 }
 
 .resumo-projeto{
-    max-width: 550px;
+    max-width: 500px;
     background-color: rgba(48, 44, 36, 0.444);
     padding: 25px 25px;
     border-radius: 20px;
@@ -100,7 +101,7 @@
 }
 
 .infos-projeto{
-    width: 550px;
+    max-width: 500px;
     display: flex;
     justify-content: space-between;
     
@@ -112,7 +113,7 @@
     width: 47%;
     border-radius: 5px;
     box-shadow: 0 0 0px 0.2px var(--cor-um);
-    padding: 30px 20px;
+    padding: 20px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -191,5 +192,77 @@
 
 
 @media (max-width:1250px){
+    #projeto{
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 0px;
+        overflow: hidden;
+    }
+
+
+    .content-projeto{
+        justify-content: center;
+        height: fit-content;
+        gap: 30px;
+        margin-top: 0;
+    }
+    .projeto-container{
+        flex-direction: column;
+        padding: 0px 30px;
+        gap: 0px;
+    }
+    #projeto h1{
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #projeto p{
+        font-size: 15px;
+    }
+    .projeto-right img{
+        display: none;
+    }
+    .projeto-right{
+        max-width: 718px;
+        align-items: center;
+        padding: 30px 10px;
+    }
+    .projeto-right h2{
+        line-height: 25px;
+        text-align: center;
+    }
+    .resumo-projeto{
+        max-width: 718px;
+    }
+    .infos-projeto{
+        max-width: 718px;
+    }
+    .projeto-block{
+        justify-content: center;
+        gap: 30px;
+        height: fit-content;
+    }
+    .infos-projeto p{
+        text-align: center;
+    }
+    .metodologia-projeto{
+        gap: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon-titulo{
+        height: 25px;
+        width: 25px;
+    }
+    .texto-topico h3{
+        font-size: 17px;
+    }
+    .texto-topico p{
+        font-size: 15px;
+    }
+    
 
 }

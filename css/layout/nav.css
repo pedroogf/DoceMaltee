@@ -173,6 +173,9 @@ header:hover {
     .home-content a{
         font-size: 10px;
     }
+    .home-content{
+        display: none;
+    }
 
 }
 

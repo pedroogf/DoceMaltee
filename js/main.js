@@ -1,8 +1,7 @@
 
 
 const integrantes = document.getElementsByClassName('integrante');
-const videoBanner = document.getElementById('banner-content');
-videoBanner.playbackRate = 0.9;
+
 
 
 for (let integrante of integrantes) {
