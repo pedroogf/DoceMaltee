@@ -1,5 +1,5 @@
 #grupo{
-    background: rgb(20, 20, 20);
+    background-color: var(--cor-preta);
     height: 60vh;
 }
 
