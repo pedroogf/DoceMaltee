@@ -58,3 +58,33 @@ document.addEventListener('DOMContentLoaded', () => {
     fadeElements.forEach(el => observer.observe(el));
 });
 
+
+
+
+const hamburger = document.getElementById('open');
+const closeNav = document.getElementById('close');
+const navList = document.getElementById('nav-list')
+const navItem = document.querySelectorAll('#nav-list a')
+
+
+
+
+hamburger.addEventListener('click', () => {
+  navList.classList.add('active');
+  hamburger.style.display = 'none';
+  closeNav.style.display = 'inline';
+});
+
+closeNav.addEventListener('click', () => {
+  navList.classList.remove('active');
+  hamburger.style.display = 'inline';
+  closeNav.style.display = 'none';
+});
+
+navItem.forEach(item => {
+    item.addEventListener('click', () => {
+        navList.classList.remove('active');
+        hamburger.style.display = 'inline';
+        closeNav.style.display = 'none';
+    });
+});
