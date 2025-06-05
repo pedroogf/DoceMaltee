@@ -54,7 +54,8 @@
     background-color: rgba(48, 44, 36, 0.444);
     padding: 25px 25px;
     border-radius: 20px;
-    box-shadow: 0 0 0px 0.3px var(--cor-um);
+    border: 1px solid rgba(255, 166, 0, 0.233);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.514);
 }
 .resumo-projeto span{
     color: var(--cor-um);
@@ -104,20 +105,19 @@
     max-width: 500px;
     display: flex;
     justify-content: space-between;
-    
-
 }
 
 .block-info{
     background-color: rgba(48, 44, 36, 0.113);
     width: 47%;
     border-radius: 5px;
-    box-shadow: 0 0 0px 0.2px var(--cor-um);
     padding: 20px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: 1px solid rgba(255, 166, 0, 0.233);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.514);
 }
 .block-info p{
     font-size: 15px;
@@ -139,6 +139,8 @@
     display: flex;
     box-shadow: 0 0 0px 0.3px var(--cor-um);
     justify-content: center;
+    border: 1px solid rgba(255, 166, 0, 0.233);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.514);
 
 }
 
