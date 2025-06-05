@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    height: 40px;
+    height: 50px;
     display: flex;
     justify-content: center; 
     transition: 0.3s ease-out;
@@ -40,7 +40,7 @@ a{
     position: relative;
     text-decoration: none;
     list-style: none;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
 
 }
 
@@ -48,7 +48,7 @@ header a::after{
     content: '';
     position: absolute;
     background: var(--cor-um);
-    height: 1.5px;
+    height: 2px;
     width: 0%;
     bottom: -2px;
     left: 0;
@@ -61,7 +61,7 @@ header a:hover::after{
 }
 
 header:hover {
-    background-color: rgba(128, 128, 128, 0.168);
+    background-color: rgba(168, 168, 168, 0.168);
 }
 
 .header::before{
@@ -71,6 +71,10 @@ header:hover {
     content: '';
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
+}
+
+.header a {
+    color: rgba(240, 248, 255, 0.801);
 }
 
 
@@ -101,8 +105,6 @@ header:hover {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-
-
 }
 
 
@@ -220,6 +222,7 @@ footer h1{
 
     .nav{
         position: relative;
+        padding: 0 20px;
     }
 
     #nav-list{
@@ -243,7 +246,9 @@ footer h1{
         display: inline;
     }
 
-
+    .right-footer p{
+        text-align: center;
+    }
 
 
     .home-content{
@@ -271,9 +276,7 @@ footer h1{
         height: fit-content;
         gap: 30px;
     }
-    footer a, p{
-        text-align: center;
-    }
+    
 
     .right-footer, .left-footer{
         align-items: center;

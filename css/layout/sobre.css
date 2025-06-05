@@ -143,6 +143,12 @@
     #sobre p{
         font-size: 15px;
     }
+    .sobre-content p{
+        margin-bottom: 5px;
+    }
+    #saiba-mais-btn{
+        font-size: 15px;
+    }
 
 }
 
