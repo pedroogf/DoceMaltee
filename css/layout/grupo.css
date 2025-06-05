@@ -114,9 +114,8 @@
     color: var(--cor-um);
 }
 
-.integrante ul{
-    width: fit-content;
-}
+
+
 
 .integrante ul li{
     list-style:disc;
@@ -183,9 +182,8 @@
         box-shadow: 0px 0px 10px 5px rgba(255, 106, 0, 0.188);
         border: 1px solid var(--cor-um);
     }
-    .integrante ul{
-        width: fit-content;
-    }
+
+    
     .nome-integrante h2{
         font-size: 17px;
         font-weight: 600;
